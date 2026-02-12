@@ -30,19 +30,19 @@
   .logo-title { font-family: 'Varela Round', sans-serif; font-size: 42px; font-weight: 700; background: linear-gradient(135deg, var(--yellow), var(--pink-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1.1; }
   .logo-subtitle { font-size: 14px; color: rgba(255,255,255,0.5); font-weight: 600; letter-spacing: 4px; text-transform: uppercase; }
   .header-right { display: flex; align-items: center; gap: 20px; }
-  .yesterday-banner { background: rgba(0, 191, 165, 0.12); border: 2px solid rgba(0, 191, 165, 0.35); border-radius: 20px; padding: 16px 28px; min-width: 380px; }
-  .yesterday-label { font-size: 14px; font-weight: 800; color: var(--green); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px; }
-  .yesterday-q { font-size: 17px; color: rgba(255,255,255,0.65); margin-bottom: 4px; font-weight: 600; }
+  .yesterday-banner { background: rgba(0, 191, 165, 0.12); border: 2px solid rgba(0, 191, 165, 0.35); border-radius: 20px; padding: 18px 28px; min-width: 420px; max-width: 520px; display: flex; flex-direction: column; gap: 8px; }
+  .yesterday-label { font-size: 14px; font-weight: 800; color: var(--green); text-transform: uppercase; letter-spacing: 2px; }
+  .yesterday-q { font-size: 17px; color: rgba(255,255,255,0.65); font-weight: 600; line-height: 1.3; }
   .yesterday-a { font-family: 'Varela Round', sans-serif; font-size: 38px; font-weight: 700; color: var(--green); display: flex; align-items: baseline; gap: 10px; }
   .yesterday-a .small { font-size: 15px; color: rgba(255,255,255,0.5); font-family: 'Nunito', sans-serif; font-weight: 600; }
-  .yesterday-winner { display: flex; align-items: center; gap: 8px; margin-top: 8px; }
-  .yesterday-winner-badge { background: var(--pink); color: white; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; }
+  .yesterday-winner { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+  .yesterday-winner-badge { background: var(--pink); color: white; font-size: 13px; font-weight: 800; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; flex-shrink: 0; }
   .yesterday-winner-name { font-size: 16px; color: rgba(255,255,255,0.8); font-weight: 700; }
   .day-badge { background: linear-gradient(135deg, var(--pink), #c2185b); color: white; padding: 12px 28px; border-radius: 60px; font-family: 'Varela Round', sans-serif; font-size: 22px; font-weight: 600; box-shadow: 0 6px 24px rgba(233, 30, 99, 0.4); white-space: nowrap; position: relative; overflow: hidden; }
   .day-badge::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.15) 50%, transparent 60%); animation: shine 4s ease-in-out infinite; }
   @keyframes shine { 0%, 100% { transform: translateX(-100%); } 50% { transform: translateX(100%); } }
-  .main { position: relative; z-index: 2; flex: 1; display: flex; align-items: center; justify-content: center; padding: 10px 60px; min-height: 0; }
-  .question-card { background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 32px; padding: 44px 64px; max-width: 1300px; width: 100%; position: relative; overflow: hidden; }
+  .main { position: relative; z-index: 2; flex: 1; display: flex; align-items: flex-start; justify-content: center; padding: 40px 60px; min-height: 0; }
+  .question-card { background: rgba(255, 255, 255, 0.04); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 32px; padding: 54px 64px; max-width: 1300px; width: 100%; position: relative; overflow: hidden; min-height: 200px; display: flex; flex-direction: column; justify-content: center; }
   .question-card::before { content: '?'; position: absolute; right: -20px; bottom: -80px; font-family: 'Varela Round', sans-serif; font-size: 320px; font-weight: 700; color: rgba(255, 255, 255, 0.02); pointer-events: none; }
   .question-label { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 193, 7, 0.15); border: 1px solid rgba(255, 193, 7, 0.3); color: var(--yellow); padding: 6px 20px; border-radius: 30px; font-size: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 3px; margin-bottom: 20px; }
   .question-text { font-family: 'Varela Round', sans-serif; font-size: 60px; font-weight: 600; color: white; line-height: 1.25; }
